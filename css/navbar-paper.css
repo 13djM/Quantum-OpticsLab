@@ -1,0 +1,57 @@
+/* === Paper-style navbar (localized override) === */
+
+.navbar.navbar-inverse {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar.navbar-inverse .navbar-nav>li>a {
+    color: #555;
+}
+
+.navbar.navbar-inverse .navbar-nav>li>a:hover {
+    color: #333;
+    background-color: transparent;
+}
+
+.navbar.navbar-inverse .navbar-nav>.active>a,
+.navbar.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #f4f6f8;
+    color: #333;
+    border-radius: 4px;
+}
+
+/* Brand / text cleanup */
+.navbar.navbar-inverse .navbar-text {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+.navbar.navbar-inverse .navbar-text,
+.navbar.navbar-inverse .navbar-text * {
+    color: #000000 !important;
+}
+
+/* Mobile Toggle - Black Icons */
+.navbar.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+    /* Minimalist border */
+}
+
+.navbar.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000000;
+    /* Black by default */
+}
+
+.navbar.navbar-inverse .navbar-toggle:hover,
+.navbar.navbar-inverse .navbar-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Very subtle background on hover */
+}
+
+.navbar.navbar-inverse .navbar-toggle:hover .icon-bar {
+    background-color: #333333;
+    /* Slightly lighter/minimalist change */
+}

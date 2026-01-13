@@ -1,0 +1,113 @@
+/* Custom functional styles for Remote Workflow */
+
+/* Utilities */
+.hint {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.small {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Command Copy Button */
+.cmd-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.copy {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy:hover {
+    background: #e9ecef;
+}
+
+/* Layout helpers */
+body {
+    overflow-x: hidden;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .two {
+        grid-template-columns: 1fr;
+    }
+}
+
+.aside {
+    background: #fbfbfb;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 13px;
+}
+
+/* Checklist */
+.checklist li {
+    list-style-type: none;
+}
+
+.checklist li::before {
+    content: '✔';
+    color: #28a745;
+    margin-right: 10px;
+}
+
+.ok {
+    color: #28a745;
+}
+
+/* Markdown Content Restoration */
+.markdown-body pre {
+    background: #282a36 !important;
+    color: #f8f8f2 !important;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.markdown-body pre code {
+    background: transparent !important;
+    color: #f8f8f2 !important;
+    padding: 0;
+}
+
+.markdown-body h2 {
+    border-bottom: 2px solid #800000;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+.markdown-body h3 {
+    color: #800000;
+}
+
+/* Grid Overflow Fix */
+.two>div {
+    min-width: 0;
+}

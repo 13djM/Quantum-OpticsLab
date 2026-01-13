@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | TQO Lab</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/member-profile.css">
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navbar-paper.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar__content">
+            <a href="index.html" class="navbar__brand">
+                <img src="assets/images/logo.png" alt="TQO Lab Logo" class="navbar__logo">
+            </a>
+            <button class="navbar__toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="navbar__menu" id="nav-menu">
+                <li><a href="index.html" class="navbar__link">Home</a></li>
+                <li><a href="research.html" class="navbar__link">Research</a></li>
+                <li><a href="publications.html" class="navbar__link">Publications</a></li>
+                <li><a href="members.html" class="navbar__link" style="color: var(--color-primary);">Members</a></li>
+                <li><a href="teaching.html" class="navbar__link">Teaching</a></li>
+                <li><a href="contact.html" class="navbar__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="section-header" style="padding: 60px 0; background-color: var(--color-bg-body);">
+        <h1 class="section-title">Team Members</h1>
+        <p class="section-subtitle">Meet the researchers behind our work.</p>
+    </header>
+
+    <main class="container" style="padding-bottom: 80px;">
+        <!-- Principal Investigator Section -->
+        <section id="pi-section" style="margin-bottom: 60px;">
+            <h2 class="section-title"
+                style="font-size: 24px; margin-bottom: 30px; text-align: left; border-bottom: 2px solid var(--color-border); padding-bottom: 10px;">
+                Principal Investigator</h2>
+            <div id="pi-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-xl); max-width: 100%;">
+                <!-- PI card will be injected here -->
+            </div>
+        </section>
+
+        <!-- PhD Scholars Section -->
+        <section id="phd-section" style="margin-bottom: 60px;">
+            <h2 class="section-title"
+                style="font-size: 28px; margin-bottom: 30px; text-align: left; color: var(--color-primary);">PhD
+                Scholars</h2>
+            <div id="phd-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-xl);">
+                <!-- PhD cards will be injected here -->
+            </div>
+        </section>
+
+        <!-- Project Students Section -->
+        <section id="project-section" style="margin-bottom: 60px;">
+            <h2 class="section-title"
+                style="font-size: 28px; margin-bottom: 30px; text-align: left; color: var(--color-primary);">Project
+                Students</h2>
+            <div id="project-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-xl);">
+                <!-- Project Student cards will be injected here -->
+            </div>
+        </section>
+
+        <!-- Past Members Section -->
+        <section id="alumni-section" style="margin-bottom: 60px;">
+            <h2 class="section-title"
+                style="font-size: 28px; margin-bottom: 30px; text-align: left; color: var(--color-primary);">Past
+                Members</h2>
+            <div id="alumni-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-xl);">
+                <!-- Alumni cards will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col">
+                <h3>Contact</h3>
+                <p>School of Physical Sciences</p>
+                <p>IIT Mandi, Kamand Campus</p>
+                <p>Mandi - 175005, India</p>
+                <br>
+                <p>Email: ppathak@iitmandi.ac.in</p>
+            </div>
+            <div class="footer__col">
+                <h3>Quick Links</h3>
+                <a href="research.html" class="footer__link">Research Themes</a>
+                <a href="members.html" class="footer__link">Group Members</a>
+                <a href="publications.html" class="footer__link">Publications</a>
+                <a href="teaching.html" class="footer__link">Teaching Resources</a>
+            </div>
+            <div class="footer__col">
+                <h3>Affiliations</h3>
+                <p>Indian Institute of Technology Mandi</p>
+                <p>School of Physical Sciences</p>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2026 Theoretical Quantum Optics Lab, IIT Mandi.
+            <br>
+            Designed and Maintained by <span class="signature-break"></span> <a href="members/member4.html"
+                class="footer-signature">Dibyajyoti Mech</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/members.js"></script>
+    <script src="assets/js/navigation.js"></script>
+</body>
+
+</html>

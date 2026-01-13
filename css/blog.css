@@ -1,0 +1,227 @@
+/* Blog Post Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Reset margin from style.min.css used for sticky footer */
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    color: #111;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.blog-header-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+.blog-container {
+    max-width: 1100px;
+    /* Increased width to accommodate sidebar */
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.blog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.blog-main {
+    flex: 3;
+    /* Removed card styles as requested */
+    padding: 0;
+}
+
+.blog-sidebar {
+    flex: 1;
+    min-width: 250px;
+}
+
+.blog-meta {
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    font-style: italic;
+}
+
+.blog-content p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+    text-align: justify;
+    /* Justify text */
+}
+
+.blog-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 2em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 1em;
+    margin-left: 0;
+    color: #666;
+    font-style: italic;
+}
+
+/* Timeline Styles */
+.sidebar-widget {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-widget h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6px;
+    width: 2px;
+    background: #e0e0e0;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #007861;
+    /* Using a color from the main site palette */
+}
+
+.timeline-date {
+    font-size: 0.85em;
+    color: #888;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.timeline-content {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Navbar Overrides for Blog */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #f1f1f1;
+    color: #666;
+    margin-top: 0em;
+    /* Reset absolute positioning from style.min.css */
+    position: relative;
+    bottom: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 0;
+        /* Remove padding for small screens */
+        max-width: 100%;
+    }
+
+    .blog-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .blog-main {
+        padding: 0 15px;
+        /* Add slight padding for text readability on mobile edges, or 0 if strictly requested */
+    }
+
+    .blog-sidebar {
+        order: 2;
+        padding: 0 15px;
+    }
+
+    .timeline-widget {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-main {
+        padding: 1px;
+        /* 1px padding as requested */
+    }
+
+    .blog-content p {
+        padding: 0 15px;
+        /* Text still needs some breathing room usually, but let's stick to "without padding" for the container? Or maybe they want edge-to-edge text? */
+        /* Let's interpret "without padding" as removing the container padding. Text usually needs side padding to be readable. */
+        /* But "justified for the whole screen" might imply edge-to-edge. */
+        /* I will add a small padding for readability but remove the main container padding. */
+        padding: 0 10px;
+    }
+}

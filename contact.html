@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TQO Lab</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navbar-paper.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar__content">
+            <a href="index.html" class="navbar__brand">
+                <img src="assets/images/logo.png" alt="TQO Lab Logo" class="navbar__logo">
+            </a>
+            <button class="navbar__toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="navbar__menu" id="nav-menu">
+                <li><a href="index.html" class="navbar__link">Home</a></li>
+                <li><a href="research.html" class="navbar__link">Research</a></li>
+                <li><a href="publications.html" class="navbar__link">Publications</a></li>
+                <li><a href="members.html" class="navbar__link">Members</a></li>
+                <li><a href="teaching.html" class="navbar__link">Teaching</a></li>
+                <li><a href="contact.html" class="navbar__link" style="color: var(--color-primary);">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="section-header" style="padding: 60px 0; background-color: var(--color-bg-body);">
+        <h1 class="section-title">Get in Touch</h1>
+        <p class="section-subtitle">We are always looking for motivated students and collaborators.</p>
+    </header>
+
+    <main class="container" style="padding-bottom: 80px;">
+        <div class="contact-grid">
+
+            <!-- Contact Info -->
+            <div id="contact-info">
+                <h2 style="font-size: 24px; margin-bottom: 24px; color: var(--color-secondary);">Contact Information
+                </h2>
+
+                <div style="margin-bottom: 24px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Address</h3>
+                    <p style="color: var(--color-text-light); line-height: 1.6;">
+                        School of Basic Sciences<br>
+                        Indian Institute of Technology Mandi<br>
+                        Kamand Campus, Mandi - 175005<br>
+                        Himachal Pradesh, India
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 24px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Email</h3>
+                    <p><a href="mailto:d25084@students.iitmandi.ac.in"
+                            style="color: var(--color-primary); text-decoration: none;">d25084@students.iitmandi.ac.in</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Phone</h3>
+                    <p style="color: var(--color-text-light);">+91-1905-237981</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <form id="contact-form" action="mailto:d25084@students.iitmandi.ac.in" method="POST"
+                    enctype="text/plain"
+                    style="background: white; padding: 32px; border-radius: 8px; box-shadow: var(--shadow-sm); border: 1px solid var(--color-border);">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select id="subject" name="subject" class="form-input">
+                            <option value="inquiry">General Inquiry</option>
+                            <option value="phd">PhD Application</option>
+                            <option value="postdoc">Postdoc Application</option>
+                            <option value="collaboration">Research Collaboration</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    <p id="form-status" style="margin-top: 16px; font-size: 14px; display: none;"></p>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.664483758652!2d76.99267131551066!3d31.77665424855594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904e26eeec6d5c5%3A0xe758a5e8e8e7a6f2!2sIIT%20Mandi%20North%20Campus!5e0!3m2!1sen!2sin!4v1641888888888!5m2!1sen!2sin"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col">
+                <h3>Contact</h3>
+                <p>School of Physical Sciences</p>
+                <p>IIT Mandi, Kamand Campus</p>
+                <p>Mandi - 175005, India</p>
+                <br>
+                <p>Email: d25084@students.iitmandi.ac.in</p>
+            </div>
+            <div class="footer__col">
+                <h3>Quick Links</h3>
+                <a href="research.html" class="footer__link">Research Themes</a>
+                <a href="members.html" class="footer__link">Group Members</a>
+                <a href="publications.html" class="footer__link">Publications</a>
+                <a href="teaching.html" class="footer__link">Teaching Resources</a>
+            </div>
+            <div class="footer__col">
+                <h3>Affiliations</h3>
+                <p>Indian Institute of Technology Mandi</p>
+                <p>School of Physical Sciences</p>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2026 Theoretical Quantum Optics Lab, IIT Mandi.
+            <br>
+            Designed and Maintained by <span class="signature-break"></span> <a href="members/member4.html"
+                class="footer-signature">Dibyajyoti Mech</a>
+        </div>
+    </footer>
+
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/form-handler.js"></script>
+</body>
+
+</html>

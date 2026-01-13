@@ -1,0 +1,152 @@
+/* Solarized Light Theme */
+
+/* Base Colors */
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+
+    /* Custom Accents */
+    --burgundy: #800020;
+}
+
+body {
+    background-color: var(--base3);
+    color: var(--base00);
+    margin-bottom: 120px !important;
+    /* Reduced Footer Gap */
+}
+
+/* Fix background bleeding */
+html {
+    background-color: var(--base3);
+}
+
+/* Overriding Bootstrap/Base styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--orange);
+}
+
+/* Bold text in Burgundy */
+b,
+strong {
+    color: var(--burgundy);
+}
+
+/* Navbar overrides */
+.navbar.navbar-inverse {
+    background-color: var(--base3);
+    /* Match body background */
+    border-color: var(--base2);
+    /* Subtle border */
+    border-bottom: 1px solid var(--base2);
+}
+
+.navbar.navbar-inverse .navbar-nav>li>a {
+    color: var(--base00);
+    /* Dark text */
+}
+
+.navbar.navbar-inverse .navbar-nav>.active>a,
+.navbar.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: var(--base2);
+    /* Slightly darker highlight */
+    color: var(--base01);
+}
+
+.navbar.navbar-inverse .navbar-brand {
+    color: var(--base01);
+}
+
+.navbar-text {
+    color: var(--base01) !important;
+}
+
+/* Mobile Toggle - Solarized */
+.navbar.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: var(--base01);
+    /* Dark grey icons */
+}
+
+.navbar.navbar-inverse .navbar-toggle:hover,
+.navbar.navbar-inverse .navbar-toggle:focus {
+    background-color: var(--base2);
+}
+
+/* Section backgrounds */
+.section {
+    background-color: var(--base3);
+    border-bottom: 1px solid var(--base2);
+    margin: 2em 0 !important;
+    /* Reduced Section Spacing */
+}
+
+/* Card/Box styles if present */
+.card {
+    background-color: var(--base2);
+    border: 1px solid var(--base1);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--base2);
+    color: var(--base01);
+}
+
+.footer i {
+    color: var(--base01);
+}
+
+/* Table styles */
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: var(--base2);
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-top: 1px solid var(--base1);
+}
+
+/* Language bar */
+#language-bar span {
+    color: var(--burgundy) !important;
+}
+
+#language-bar a {
+    color: var(--base01);
+}

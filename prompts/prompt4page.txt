@@ -1,0 +1,94 @@
+ROLE:
+You are an expert academic web architect and UX designer specializing in research group websites for theoretical physics and quantum optics labs. You combine best practices from top university research group webpages with modern, lightweight web development standards.
+
+TASK:
+Design a complete, practical implementation plan for a research group website titled:
+"Theoretical Quantum Optics"
+
+OBJECTIVES:
+1. Identify standard and best-practice approaches used in successful academic research group websites.
+2. Propose a clean, scalable, and maintainable website architecture.
+3. Output a directory-wise folder and file graph suitable for direct implementation.
+4. Improve upon the initial requirements by benchmarking against well-designed research group webpages.
+
+CORE REQUIREMENTS (MUST FOLLOW):
+- The website is a static or semi-static academic site (HTML/CSS/JS based).
+- Modular design: each major section lives on its own HTML page (not embedded in index.html).
+- Minimalist, professional, research-focused aesthetic.
+
+STRUCTURE REQUIREMENTS:
+1. Main Page (index.html):
+   - Lab name and short mission statement
+   - Research highlights (concise bullet points or cards)
+   - Group highlights (awards, news, collaborations)
+   - Group Members Section:
+     - 4 members total
+     - Desktop view: 4 cards in a single row
+     - Mobile view: 1 card per row
+     - Each card includes:
+       - Photo
+       - Name
+       - Roll number
+       - Clickable link to a personal page (name.html)
+     - Subtle JavaScript-based hover or reveal effect (minimalist, non-distracting)
+
+2. Individual Member Pages (name.html):
+   - Photo
+   - Short bio
+   - Research interests
+   - Contact or academic links (email, Google Scholar, etc.)
+
+3. Navigation:
+   - Collapsible menu bar (mobile-first design)
+   - Menu links to:
+     - Home
+     - Research
+     - Publications
+     - Teaching
+     - Members
+     - Contact
+   - Each section must open a separate HTML page (not anchor sections)
+
+4. Additional Pages:
+   - Research page (themes, projects)
+   - Publications page
+   - Teaching page
+   - Contact page
+
+5. Footer:
+   - Contact information
+   - Lab location
+   - Institutional affiliation
+   - Minimal footer styling
+
+DELIVERABLES:
+A. A directory-wise folder tree showing:
+   - HTML files
+   - CSS organization
+   - JavaScript files
+   - Image/assets structure
+
+B. A short explanation of why this structure is optimal for:
+   - Maintainability
+   - Scalability
+   - Academic professionalism
+
+C. JavaScript usage guidelines (what effects to use and where, without overengineering)
+
+ADVANCED REQUIREMENT — BENCHMARKING:
+- Analyze common patterns from well-designed academic research group websites (e.g., theoretical physics, quantum optics, or related fields).
+- Identify what those sites do well (navigation, hierarchy, clarity, accessibility).
+- Propose concrete improvements or refinements to the initial plan based on this benchmarking.
+- Clearly explain how your proposed implementation is superior or more modern while remaining academic.
+
+CONSTRAINTS:
+- Do NOT generate actual HTML/CSS/JS code unless explicitly requested.
+- Focus on structure, architecture, and design logic.
+- Keep explanations concise, technical, and implementation-ready.
+- Assume the audience is a technically competent graduate student or researcher building the site themselves.
+
+OUTPUT FORMAT:
+- Start with the directory tree (code-block style).
+- Follow with structured sections using clear headings.
+- Use bullet points where appropriate.
+

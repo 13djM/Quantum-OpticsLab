@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theoretical Quantum Optics | IIT Mandi</title>
+    <meta name="description"
+        content="Research group of Dr. Pradyumna Kumar Pathak at IIT Mandi, specializing in Quantum Optics, Information, and Nanophotonics.">
+
+    <!-- CSS -->
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="css/navbar-paper.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar__content">
+            <a href="index.html" class="navbar__brand">
+                <img src="assets/images/logo.png" alt="TQO Lab Logo" class="navbar__logo">
+            </a>
+            <button class="navbar__toggle" id="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="navbar__menu" id="nav-menu">
+                <li><a href="index.html" class="navbar__link">Home</a></li>
+                <li><a href="research.html" class="navbar__link">Research</a></li>
+                <li><a href="publications.html" class="navbar__link">Publications</a></li>
+                <li><a href="members.html" class="navbar__link">Members</a></li>
+                <li><a href="teaching.html" class="navbar__link">Teaching</a></li>
+                <li><a href="contact.html" class="navbar__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero"
+        style="background: linear-gradient(90deg, #902035 0%, #b03045 50%, #902035 100%); color: white; padding: 100px 0; text-align: center;">
+        <div class="container">
+            <h1
+                style="font-size: var(--size-hero); font-weight: 700; margin-bottom: var(--space-md); font-family: var(--font-serif);">
+                Theoretical Quantum Optics</h1>
+            <p style="font-size: var(--size-xl); max-width: 700px; margin: 0 auto var(--space-lg); opacity: 0.9;">
+                Exploring the frontiers of light-matter interaction, open quantum systems, and nanophotonics at IIT
+                Mandi.</p>
+            <div style="display: flex; gap: var(--space-md); justify-content: center;">
+                <a href="research.html" class="btn" style="background: white; color: var(--color-primary);">Our
+                    Research</a>
+                <a href="publications.html" class="btn" style="border: 1px solid white; color: white;">Publications</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mission / About -->
+    <section class="section" style="padding: var(--space-xxl) 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About the Group</h2>
+                <p class="section-subtitle">Led by Dr. Pradyumna Kumar Pathak, we investigate fundamental quantum
+                    phenomena and their applications in modern technologies.</p>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-xl); align-items: center;">
+                <div>
+                    <h3
+                        style="color: var(--color-secondary); margin-bottom: var(--space-sm); font-size: var(--size-lg);">
+                        Research Focus</h3>
+                    <p style="margin-bottom: var(--space-md); line-height: 1.8; color: var(--color-text-light);">
+                        Our work spans Cavity QED, Quantum Information Processing, and Mesoscopic Physics. We are
+                        interested in understanding how quantum systems behave in open environments and how to engineer
+                        them for next-generation devices.
+                    </p>
+                    <ul style="list-style: none; display: grid; gap: var(--space-sm);">
+                        <li style="display: flex; align-items: center; gap: 8px;">🔹 Open Quantum Systems</li>
+                        <li style="display: flex; align-items: center; gap: 8px;">🔹 Nanophotonics & Plasmons</li>
+                        <li style="display: flex; align-items: center; gap: 8px;">🔹 Quantum Non-linear Optics</li>
+                    </ul>
+                </div>
+                <div
+                    style="background: var(--base2); padding: var(--space-lg); border-radius: 8px; border: 1px solid var(--color-border);">
+                    <h4 style="font-weight: 700; color: var(--color-primary-dark); margin-bottom: var(--space-sm);">
+                        Latest News</h4>
+                    <div style="font-size: var(--size-sm);">
+                        <p style="margin-bottom: 8px;"><strong>Jan 2024:</strong> New paper on Cavity QED submitted.</p>
+                        <p style="margin-bottom: 8px;"><strong>Dec 2023:</strong> Dr. Sharma joined as Postdoc.</p>
+                        <p><strong>Nov 2023:</strong> Group presentation at QMAT conference.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col">
+                <h3>Contact</h3>
+                <p>School of Physical Sciences</p>
+                <p>IIT Mandi, Kamand Campus</p>
+                <p>Mandi - 175005, India</p>
+                <br>
+                <p>Email: ppathak@iitmandi.ac.in</p>
+            </div>
+            <div class="footer__col">
+                <h3>Quick Links</h3>
+                <a href="research.html" class="footer__link">Research Themes</a>
+                <a href="members.html" class="footer__link">Group Members</a>
+                <a href="publications.html" class="footer__link">Publications</a>
+                <a href="teaching.html" class="footer__link">Teaching Resources</a>
+            </div>
+            <div class="footer__col">
+                <h3>Affiliations</h3>
+                <p>Indian Institute of Technology Mandi</p>
+                <p>School of Physical Sciences</p>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            &copy; 2026 Theoretical Quantum Optics Lab, IIT Mandi.
+            <br>
+            Designed and Maintained by <span class="signature-break"></span> <a href="members/member4.html"
+                class="footer-signature">Dibyajyoti Mech</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/navigation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+/* Layout Structure */
+body {
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    --color-bg-body: #f8f9fa;
+    --font-sans: 'Inter', sans-serif;
+    --container-width: 1200px;
+    --header-height: 80px;
+    --logo-height: 50px;
+    /* Control for logo scale */
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-bottom: 0 !important;
+    /* Override legacy style.min.css margin */
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth slide effect */
+}
+
+/* Hidden state for navbar (mobile scroll) */
+.navbar.navbar--hidden {
+    transform: translateY(-100%);
+}
+
+.navbar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar__brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo {
+    height: var(--logo-height);
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar__brand span {
+    color: var(--color-secondary);
+}
+
+.navbar__menu {
+    display: flex;
+    gap: var(--space-lg);
+    list-style: none;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--color-text-main);
+    font-weight: 500;
+    transition: color var(--transition-fast);
+    font-size: var(--size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.navbar__link:hover {
+    color: var(--color-primary);
+}
+
+.navbar__toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: var(--size-xl);
+    cursor: pointer;
+    color: var(--color-text-main);
+}
+
+/* Footer */
+.footer {
+    background: #0a0a15;
+    /* Deep Black */
+    color: #9999aa;
+    padding: var(--space-lg) 0;
+    margin-top: auto;
+    position: relative !important;
+    width: 100%;
+}
+
+.footer__grid {
+    display: flex;
+    /* Use flexbox for Left-Center-Right alignment */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+    /* Allow wrapping on mobile */
+}
+
+/* Ensure columns take appropriate space */
+.footer__col {
+    flex: 1;
+    min-width: 100px;
+    /* Minimum width before wrapping */
+}
+
+/* Specific alignment for columns */
+.footer__col:first-child {
+    text-align: left;
+}
+
+.footer__col:nth-child(2) {
+    text-align: center;
+}
+
+.footer__col:last-child {
+    text-align: right;
+}
+
+.footer__col h3 {
+    color: white;
+    /* Bold White Headers */
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    font-size: var(--size-lg);
+}
+
+.footer__col p {
+    color: #e0e0e0;
+    /* Light Grey for content */
+    margin-bottom: 4px;
+}
+
+.footer__link {
+    display: block;
+    color: #e0e0e0;
+    /* Light Grey for links */
+    text-decoration: none;
+    margin-bottom: var(--space-sm);
+    transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+    color: white;
+    /* Hover to white */
+    text-decoration: none;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Semi-transparent white border */
+    color: rgba(255, 255, 255, 0.7);
+    font-size: var(--size-sm);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    /* Footer Mobile Overrides */
+    .footer {
+        padding: var(--space-lg) 0;
+        /* Reduced padding for mobile */
+    }
+
+    .footer__grid {
+        flex-direction: column;
+        align-items: center;
+        /* Center align all items */
+        gap: var(--space-lg);
+    }
+
+    .footer__col {
+        width: 100%;
+        text-align: center !important;
+        /* Force center alignment */
+        margin-bottom: var(--space-md);
+    }
+
+    /* Reset specific column alignments for mobile */
+    .footer__col:first-child,
+    .footer__col:nth-child(2),
+    .footer__col:last-child {
+        text-align: center;
+    }
+
+    .footer__copyright {
+        margin-top: var(--space-md);
+        padding-top: var(--space-md);
+    }
+
+    /* Navbar Mobile Overrides */
+    .navbar__toggle {
+        display: block;
+        /* Show hamburger menu */
+    }
+
+    .navbar__menu {
+        display: none;
+        /* Hide menu by default */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        padding: var(--space-md);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: var(--space-sm);
+    }
+
+    .navbar__menu.open {
+        display: flex;
+        /* Show when toggled */
+    }
+}
+
+/* Footer Signature - Modern Glow */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Roboto:wght@400&display=swap');
+
+.footer-signature {
+    font-family: 'Allura', cursive;
+    color: #ffd700 !important;
+    /* Gold */
+    font-size: 2rem;
+    /* Initial requested size */
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    /* Glow */
+    display: inline-block;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.footer-signature:hover {
+    color: #fff !important;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+/* Mobile Break */
+.signature-break {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .signature-break {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .footer-signature {
+        font-size: 1.5rem;
+        /* Slightly smaller on mobile but still prominent */
+    }
+}

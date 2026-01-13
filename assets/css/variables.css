@@ -1,0 +1,67 @@
+:root {
+  /* Solarized Light Palette */
+  --base03:    #002b36;
+  --base02:    #073642;
+  --base01:    #586e75;
+  --base00:    #657b83;
+  --base0:     #839496;
+  --base1:     #93a1a1;
+  --base2:     #eee8d5;
+  --base3:     #fdf6e3;
+  --yellow:    #b58900;
+  --orange:    #cb4b16;
+  --red:       #dc322f;
+  --magenta:   #d33682;
+  --violet:    #6c71c4;
+  --blue:      #268bd2;
+  --cyan:      #2aa198;
+  --green:     #859900;
+  
+  /* Mapped Theme Colors */
+  --color-primary: #800020;         /* Burgundy */
+  --color-primary-light: var(--orange); /* Use Orange for accents/hover */
+  --color-primary-dark: #500014;    /* Darker Burgundy */
+  --color-secondary: var(--base01); /* Secondary text/elements */
+  
+  --color-text-main: var(--base00); /* Main text */
+  --color-text-light: var(--base01);/* Lighter text */
+  --color-text-white: #ffffff;      
+  
+  --color-bg-body: var(--base3);    /* Solarized Base3 */
+  --color-bg-card: #ffffff;         /* Keep white cards */
+  --color-bg-footer: var(--base2);  /* Solarized Base2 */
+  
+  --color-border: var(--base2);     /* Border color */
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Merriweather', serif;
+  
+  --size-base: 16px;
+  --size-sm: 14px;
+  --size-lg: 18px;
+  --size-xl: 24px;
+  --size-xxl: 32px;
+  --size-hero: 48px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 64px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-md: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  --shadow-lg: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 70px;
+}
