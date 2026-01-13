@@ -82,7 +82,7 @@ const membersData = [
         "name": "Dibyajyoti Mech",
         "title": "PhD Scholar",
         "role": "Student",
-        "photo": "assets/images/members/member4.jpg",
+        "photo": "assets/images/members/profile-mech.JPG",
         "url": "members/member4.html",
         "email": "d25084@students.iitmandi.ac.in",
         "bio": "I am a first-year PhD student from Majuli, Assam. Working on Cavity QED systems, measurement problem, and decoherence phenomena.",
