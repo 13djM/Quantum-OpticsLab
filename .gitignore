@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build
+dist/
+build/
+
+# Backups and Archives
+_old_backup/
+*.bak
+*.old
+*.tmp
+
+# Machine Learning / Keys
+prompts/
+*.key
+*.token
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
