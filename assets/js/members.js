@@ -5,7 +5,7 @@ const membersData = [
         "title": "Principal Investigator",
         "role": "Faculty",
         "photo": "assets/images/members/pathak.jpg",
-        "url": "members/member1.html",
+        "url": "members/pathak.html",
         "email": "ppathak@iitmandi.ac.in",
         "contact": {
             "email": "ppathak@iitmandi.ac.in",
@@ -46,7 +46,7 @@ const membersData = [
         "name": "Dinesh Katoch",
         "title": "PhD Scholar",
         "role": "Student",
-        "photo": "assets/images/members/student-01.jpg",
+        "photo": "assets/images/members/member-2.jpg",
         "url": "members/member2.html",
         "tagline": "Exploring Light-Matter Interactions",
         "email": "d24109@students.iitmandi.ac.in",
@@ -66,7 +66,7 @@ const membersData = [
         "name": "Akshay Kumar",
         "title": "PhD Scholar",
         "role": "Student",
-        "photo": "assets/images/members/student-02.jpg",
+        "photo": "assets/images/members/member2.png",
         "url": "members/member3.html",
         "email": "",
         "bio": "Biography to be updated.",
@@ -100,7 +100,7 @@ const membersData = [
         "name": "Tathagata Mandal",
         "title": "Integrated PhD Scholar",
         "role": "Student",
-        "photo": "assets/images/placeholder.jpg",
+        "photo": "assets/images/members/profile-member5.png",
         "url": "members/member5.html",
         "email": "di2410@students.iitmandi.ac.in",
         "bio": "Integrated Ph.D student from West Bengal. Interests in literature, philosophy, political science, sketching, and painting.",
@@ -114,39 +114,39 @@ const membersData = [
         ]
     },
     // Project Students
-    {
-        "id": "member-project-01",
-        "name": "Project Student 1",
-        "title": "Project Student",
-        "role": "Student",
-        "photo": "assets/images/placeholder.jpg",
-        "email": "project1@iitmandi.ac.in"
-    },
-    {
-        "id": "member-project-02",
-        "name": "Project Student 2",
-        "title": "Intern",
-        "role": "Student",
-        "photo": "assets/images/placeholder.jpg",
-        "email": "project2@iitmandi.ac.in"
-    },
-    // Past Members
-    {
-        "id": "member-past-01",
-        "name": "Past Member 1",
-        "title": "Former PhD",
-        "status": "Alumni",
-        "photo": "assets/images/placeholder.jpg",
-        "email": "alumni1@example.com"
-    },
-    {
-        "id": "member-past-02",
-        "name": "Past Member 2",
-        "title": "Alumni",
-        "status": "Alumni",
-        "photo": "assets/images/placeholder.jpg",
-        "email": "alumni2@example.com"
-    }
+    // {
+    //     "id": "member-project-01",
+    //     "name": "Project Student 1",
+    //     "title": "Project Student",
+    //     "role": "Student",
+    //     "photo": "assets/images/placeholder.jpg",
+    //     "email": "project1@iitmandi.ac.in"
+    // },
+    // {
+    //     "id": "member-project-02",
+    //     "name": "Project Student 2",
+    //     "title": "Intern",
+    //     "role": "Student",
+    //     "photo": "assets/images/placeholder.jpg",
+    //     "email": "project2@iitmandi.ac.in"
+    // },
+    // // Past Members
+    // {
+    //     "id": "member-past-01",
+    //     "name": "Past Member 1",
+    //     "title": "Former PhD",
+    //     "status": "Alumni",
+    //     "photo": "assets/images/placeholder.jpg",
+    //     "email": "alumni1@example.com"
+    // },
+    // {
+    //     "id": "member-past-02",
+    //     "name": "Past Member 2",
+    //     "title": "Alumni",
+    //     "status": "Alumni",
+    //     "photo": "assets/images/placeholder.jpg",
+    //     "email": "alumni2@example.com"
+    // }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
