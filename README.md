@@ -1,39 +1,84 @@
-# Theoretical Quantum Optics Lab Website
+<div align="center">
+  <img src="assets/images/logo.png" alt="TQO Lab Logo" width="120">
 
-This repository contains the source code for the Theoretical Quantum Optics research group website at IIT Mandi, led by Dr. Pradyumna Kumar Pathak.
+  <h1>Theoretical Quantum Optics Lab</h1>
+  
+  <p>
+    <strong>School of Physical Sciences, IIT Mandi</strong><br>
+    <em>Led by Dr. Pradyumna Kumar Pathak</em>
+  </p>
 
-## Overview
+  [![Website](https://img.shields.io/badge/Website-Live-blue?style=for-the-badge&logo=google-chrome)](https://13djM.github.io/Quantum-OpticsLab/)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+</div>
 
-The website is a static HTML/CSS/JS site designed to be lightweight, fast, and easy to maintain. It features:
-- **Responsive Design**: Mobile-friendly layout using custom CSS and Bootstrap.
-- **Modular Structure**: Separate HTML files for major sections (Research, Members, Publications, Teaching).
-- **Modern Aesthetics**: Clean typography and visual hierarchy suitable for an academic portfolio.
+---
 
-## Structure
+## 🔬 About the Group
 
-- `index.html`: Main landing page.
-- `research.html`: Detailed research themes and projects.
-- `publications.html`: List of journal papers and conference proceedings.
-- `members.html`: Group member profiles.
-- `teaching.html`: Course materials and teaching philosophy.
-- `assets/`: Images, global CSS, and JavaScript files.
-- `css/`: Vendor libraries and print styles.
-- `members/`: Individual profile pages for group members.
+The **Theoretical Quantum Optics Lab** at IIT Mandi investigates the fundamental physics of quantum systems and their applications in modern technologies. Our research bridges the gap between **fundamental cavity quantum electrodynamics (Cavity QED)** and practical **solid-state quantum photonics**. 
 
-## Setup & Deployment
+We explore the boundaries of light-matter interaction, providing theoretical frameworks that underpin future scalable quantum information processing architectures and next-generation quantum devices.
 
-Since this is a static site, no build process is strictly required for local viewing. 
+## 🌌 Research Arenas
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   ```
-2. **Open locally**:
-   Simply open `index.html` in your web browser.
+Our work is focused on several key theoretical frontiers:
 
-## Tech Stack
+- **Quantum Coherence & Lasing**: Investigating hyperradiant lasing and threshold-less coherent light generation in quantum dot-cavity systems.
+- **Semiconductor Quantum Optics**: Studying phonon-induced control mechanisms and arbitrary vector beam generation in solid-state platforms.
+- **Quantum Entanglement**: Exploring the generation of high-fidelity entangled states for quantum networks and secure communication.
+- **Quantum Measurement Theory**: Probing weak values and sub-shot-noise metrology.
+- **Quantum Information Theory**: Developing frameworks for discrete-time quantum walks and algorithmic advantages.
 
-- **HTML5 / CSS3**
-- **JavaScript (Vanilla + jQuery)**
-- **Bootstrap 3.3.7** (Grid system and components)
-- **Google Fonts** (Inter, Merriweather, Roboto)
+## 👥 Members
+
+| Name | Role | Profile |
+|------|------|---------|
+| **Dr. Pradyumna Kumar Pathak** | Principal Investigator | [View Profile](members/pathak.html) |
+| **Dinesh Katoch** | PhD Scholar | [View Profile](members/member2.html) |
+| **Dibyajyoti Mech** | PhD Scholar | [View Profile](members/member4.html) |
+| **Tathagata Mandal** | Integrated PhD Scholar | [View Profile](members/member5.html) |
+| **Dr. L. Addepalli** | Alumnus (PhD) | [View Profile](members/member1.html) |
+
+## 📚 Selected Publications (2025)
+
+1. **Hyperradiant lasing in the incoherently driven two quantum dots coupled to a single mode cavity**  
+   _L Addepalli, PK Pathak_  
+   The European Physical Journal Special Topics (2025)
+
+2. **Two-mode hyperradiant lasing in a system of two quantum dots embedded in a bimodal photonic crystal cavity**  
+   _L Addepalli, PK Pathak_  
+   arXiv:2506.21202 (2025)
+
+3. **Correlated emission lasing in a single quantum dot embedded inside a bimodal photonic crystal cavity**  
+   _L Addepalli, PK Pathak_  
+   Physical Review B **111**, 125422 (2025) [DOI](https://doi.org/10.1103/PhysRevB.111.125422)
+
+[View Full Publication List](publications.html)
+
+## 📍 Contact
+
+**Theoretical Quantum Optics Lab**  
+Room No. 301, A7 Building  
+School of Physical Sciences  
+IIT Mandi, South Campus  
+Mandi - 175005, India  
+
+📧 **Email**: [ppathak@iitmandi.ac.in](mailto:ppathak@iitmandi.ac.in)
+
+---
+
+### 💻 Website Development
+
+This repository hosts the source code for the lab's static website. It is built using:
+- **HTML5 / CSS3 / JavaScript**
+- **Bootstrap 3** Grid System
+- **Google Fonts** (Inter, Merriweather)
+- **MathJax** for equation rendering
+
+To run locally:
+```bash
+git clone https://github.com/13djM/Quantum-OpticsLab.git
+cd Quantum-OpticsLab
+# Open index.html in your browser
+```
