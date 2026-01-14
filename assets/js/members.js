@@ -5,7 +5,7 @@ const membersData = [
         "title": "Principal Investigator",
         "role": "Faculty",
         "photo": "assets/images/members/pathak.jpg",
-        "url": "members/pathak.html",
+        "url": "members/member1.html",
         "email": "ppathak@iitmandi.ac.in",
         "contact": {
             "email": "ppathak@iitmandi.ac.in",
