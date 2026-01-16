@@ -66,15 +66,19 @@ const membersData = [
         "name": "Akshay Kumar",
         "title": "PhD Scholar",
         "role": "Student",
-        "photo": "assets/images/members/member2.png",
+        "photo": "assets/images/members/akshay.jpg",
         "url": "members/member3.html",
-        "email": "",
-        "bio": "Biography to be updated.",
+        "tagline": "Researcher in Theoretical Quantum Optics",
+        "email": "d24055@students.iitmandi.ac.in",
+        "bio": "<p style='margin-bottom: 16px;'>I am Akshay Kumar, a Ph.D. student in a Theoretical Quantum Optics group, working on open quantum systems, hybrid quantum platforms, and the foundations of quantum mechanics. My academic journey began at the Central University of Himachal Pradesh, where I completed both my bachelor’s and master’s degrees.</p>",
         "interests": [
-            "To be updated"
+            "Open quantum systems",
+            "Hybrid quantum platforms",
+            "Foundations of quantum mechanics"
         ],
         "education": [
-            "To be updated"
+            "MSc in Physics - Central University of Himachal Pradesh",
+            "BSc in Physics - Central University of Himachal Pradesh"
         ]
     },
     {
@@ -113,40 +117,20 @@ const membersData = [
             "Integrated PhD in Physics - IIT Mandi (Ongoing)"
         ]
     },
-    // Project Students
-    // {
-    //     "id": "member-project-01",
-    //     "name": "Project Student 1",
-    //     "title": "Project Student",
-    //     "role": "Student",
-    //     "photo": "assets/images/placeholder.jpg",
-    //     "email": "project1@iitmandi.ac.in"
-    // },
-    // {
-    //     "id": "member-project-02",
-    //     "name": "Project Student 2",
-    //     "title": "Intern",
-    //     "role": "Student",
-    //     "photo": "assets/images/placeholder.jpg",
-    //     "email": "project2@iitmandi.ac.in"
-    // },
-    // // Past Members
-    // {
-    //     "id": "member-past-01",
-    //     "name": "Past Member 1",
-    //     "title": "Former PhD",
-    //     "status": "Alumni",
-    //     "photo": "assets/images/placeholder.jpg",
-    //     "email": "alumni1@example.com"
-    // },
-    // {
-    //     "id": "member-past-02",
-    //     "name": "Past Member 2",
-    //     "title": "Alumni",
-    //     "status": "Alumni",
-    //     "photo": "assets/images/placeholder.jpg",
-    //     "email": "alumni2@example.com"
-    // }
+    {
+        "id": "member-lavakumar",
+        "name": "Lavakumar Addepalli",
+        "title": "PhD Scholar 2020-25",
+        "role": "Alumni",
+        "photo": "assets/images/members/past-1.jpg",
+        "url": "members/lavakumar-addepalli.html",
+        "email": "",
+        "bio": "I did my B.E. from BITS Pilani Goa in Mechanical Engineering and M. Sc. (Physics) from Savitribai Phule Pune University. During my Ph. D. at IIT Mandi, I worked on the systems including driven-dissipative semiconductor quantum dots coupled to photonic crystal cavities investigating the environment effects on the system dynamics, non-classical light generation and techniques for mitigating noise to protect quantum coherence.",
+        "interests": [
+            "Open quantum systems",
+            "Cavity/circuit QED"
+        ]
+    }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -188,7 +172,7 @@ function loadMembers() {
         } else if (member.status === 'Alumni' || member.role === 'Alumni') {
             targetGrid = grids.alumni;
             type = 'alumni';
-            card = createCompactMemberCard(member);
+            card = createMemberCard(member);
         } else if (member.title.includes('PhD') || member.title.includes('Postdoc') || member.title.includes('Research Associate')) {
             targetGrid = grids.phd;
             type = 'phd';
